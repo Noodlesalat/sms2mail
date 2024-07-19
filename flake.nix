@@ -5,7 +5,7 @@
 
   outputs = { ... }: rec {
     nixosModules = rec {
-      sms2mail = import ./sms2mail.nix;
+      sms2mail = import ./default.nix;
       default = sms2mail;
     };
     nixosModule = nixosModules.default;
